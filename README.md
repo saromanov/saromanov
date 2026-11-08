@@ -11,12 +11,12 @@ checksum verification, rate limiting, progress callbacks, manifest files with mi
 
 ![release](https://img.shields.io/github/v/release/saromanov/godownload) ![license](https://img.shields.io/github/license/saromanov/godownload) ![go](https://img.shields.io/github/go-mod/go-version/saromanov/godownload)
 
-### [otelcat](https://github.com/saromanov/otelcat)
-`kcat` for OpenTelemetry — a composable CLI for OTLP: receive traces/logs/metrics over
-gRPC and HTTP/JSON, stream them as JSONL, and replay them byte-identical back to
-another endpoint. Single static binary.
+### [openfd](https://github.com/saromanov/openfd)
+`lsof` that answers instantly — a fast, streaming file-descriptor scanner for Linux:
+direct `/proc` reading, netlink socket details, deleted-file detection, fd-leak
+detector, process tree and smart summary. Single static binary.
 
-![release](https://img.shields.io/github/v/release/saromanov/otelcat) ![license](https://img.shields.io/github/license/saromanov/otelcat)
+![release](https://img.shields.io/github/v/release/saromanov/openfd) ![license](https://img.shields.io/github/license/saromanov/openfd) ![crates.io](https://img.shields.io/crates/v/openfd)
 
 ### [rabbitmq-clue](https://github.com/saromanov/rabbitmq-clue)
 Web UI for RabbitMQ ops: inspect dead-letter queues, replay messages with confirms,
@@ -35,4 +35,4 @@ spillover, rate limiting with sampling, metrics endpoint. Includes a native slog
 - [drc](https://github.com/saromanov/drc) — Docker Registry v2 API client for Go (no daemon required)
 - [goemits](https://github.com/saromanov/goemits) — event emitter on Redis pub/sub for Go
 - [goocker](https://github.com/saromanov/goocker) — minimal container implementation for learning
-- [auth-srv](https://github.com/saromanov/auth-srv) — JWT authentication microservice
+- [otelcat](https://github.com/saromanov/otelcat) — `kcat` for OpenTelemetry: composable CLI for OTLP receive/stream/replay
