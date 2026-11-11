@@ -30,9 +30,3 @@ spillover, rate limiting with sampling, metrics endpoint. Includes a native slog
 
 ![release](https://img.shields.io/github/v/release/saromanov/logrus-loki-hook) ![license](https://img.shields.io/github/license/saromanov/logrus-loki-hook)
 
-## Other projects
-
-- [drc](https://github.com/saromanov/drc) — Docker Registry v2 API client for Go (no daemon required)
-- [goemits](https://github.com/saromanov/goemits) — event emitter on Redis pub/sub for Go
-- [goocker](https://github.com/saromanov/goocker) — minimal container implementation for learning
-- [otelcat](https://github.com/saromanov/otelcat) — `kcat` for OpenTelemetry: composable CLI for OTLP receive/stream/replay
