@@ -1,32 +1,59 @@
 # Sergey Romanov
 
-Go / Rust / Python engineer focused on Golang, CLI tooling and AI Agents.
-Love creating something that doesn't exist yet.
+Go / Rust / Python engineer. I build developer tools: fast CLIs, observability
+plumbing, and local-first tooling for AI agents. I like tools that finish
+before the shell prompt returns.
 
-## Featured projects
+[openfd](https://github.com/saromanov/openfd) ·
+[godownload](https://github.com/saromanov/godownload) ·
+[virtudoc](https://github.com/saromanov/virtudoc) ·
+[rabbitmq-clue](https://github.com/saromanov/rabbitmq-clue) ·
+[all repositories](https://github.com/saromanov?tab=repositories)
 
-### [godownload](https://github.com/saromanov/godownload)
-Download manager library and CLI in Go: resumable downloads, multi-segment transfer,
-checksum verification, rate limiting, progress callbacks, manifest files with mirrors.
+## Featured
 
-![release](https://img.shields.io/github/v/release/saromanov/godownload) ![license](https://img.shields.io/github/license/saromanov/godownload) ![go](https://img.shields.io/github/go-mod/go-version/saromanov/godownload)
+### [openfd](https://github.com/saromanov/openfd) — `lsof` that answers instantly
 
-### [openfd](https://github.com/saromanov/openfd)
-`lsof` that answers instantly — a fast, streaming file-descriptor scanner for Linux:
-direct `/proc` reading, netlink socket details, deleted-file detection, fd-leak
-detector, process tree and smart summary. Single static binary.
+Streams file descriptors straight from `/proc`: socket details from netlink,
+deleted files, descriptor leaks, process tree, summary. Single static binary.
 
-![release](https://img.shields.io/github/v/release/saromanov/openfd) ![license](https://img.shields.io/github/license/saromanov/openfd) ![crates.io](https://img.shields.io/crates/v/openfd)
+```console
+$ cargo install openfd        # or: brew install saromanov/tap/openfd
+```
 
-### [rabbitmq-clue](https://github.com/saromanov/rabbitmq-clue)
-Web UI for RabbitMQ ops: inspect dead-letter queues, replay messages with confirms,
-topology snapshot/diff, protobuf-aware publish/peek, read-only mode.
+![openfd scanning file descriptors and printing a summary](https://raw.githubusercontent.com/saromanov/openfd/HEAD/docs/demo.gif)
 
-![release](https://img.shields.io/github/v/release/saromanov/rabbitmq-clue) ![license](https://img.shields.io/github/license/saromanov/rabbitmq-clue)
+### [godownload](https://github.com/saromanov/godownload) — resumable downloads for Go
 
-### [logrus-loki-hook](https://github.com/saromanov/logrus-loki-hook)
-Reliable Loki hook for logrus: adaptive batching, retries with backoff, disk buffer
-spillover, rate limiting with sampling, metrics endpoint. Includes a native slog bridge.
+Library and CLI: multi-segment transfers, checksum verification, rate limiting,
+resume, mirror manifests, progress callbacks.
 
-![release](https://img.shields.io/github/v/release/saromanov/logrus-loki-hook) ![license](https://img.shields.io/github/license/saromanov/logrus-loki-hook)
+```console
+$ go install github.com/saromanov/godownload/cmd/godownload@latest
+```
 
+### [virtudoc](https://github.com/saromanov/virtudoc) — offline documentation server for AI agents
+
+SQLite FTS5 index, MCP tools, incremental reindex by content hash. No network,
+no API keys. `pip install virtudoc`.
+
+![virtudoc answering a query over the local docs index](https://raw.githubusercontent.com/saromanov/virtudoc/HEAD/demo.gif)
+
+### [rabbitmq-clue](https://github.com/saromanov/rabbitmq-clue) — RabbitMQ operations UI
+
+Dead-letter inspection and replay with publisher confirms, queue-to-queue moves,
+topology snapshot and diff, protobuf-aware publish and peek. One binary with an
+embedded UI.
+
+## More tools
+
+[dizee](https://github.com/saromanov/dizee) — shrink JSON, logs and diffs before
+they hit an agent context window ·
+[otelcat](https://github.com/saromanov/otelcat) — `kcat` for OpenTelemetry ·
+[logrus-loki-hook](https://github.com/saromanov/logrus-loki-hook) — reliable Loki
+hook for logrus and slog ·
+[goemits](https://github.com/saromanov/goemits) — Redis Streams event emitter
+
+## Contact
+
+[xxsmotur@gmail.com](mailto:xxsmotur@gmail.com)
